@@ -63,20 +63,15 @@ Observação: O passo "Clique no botão 'Download' no topo da página" foi remov
 <h1>Makefile</h1>
 
 <p>O Makefile é um arquivo utilizado para automatizar a construção de programas e tarefas repetitivas em um projeto. Ele permite que você defina regras para a construção do projeto, que serão executadas de forma automática quando você executar o comando make.</p>
-<p>Para executar o Makefile neste projeto, abra um terminal e navegue até a pasta raiz do projeto. Em seguida, execute o comando 
+<p>Para iniciar o comando e executar o Makefile neste projeto, abra um terminal e navegue até a pasta raiz do projeto. Em seguida, execute o comando 
 	
-<pre><code>make #para subir todas as máquinas virtuais</pre></code> , ou <pre><code>make clean</pre></code> para removê-las.</p>
-
-<p>Exemplo:</p>
-
 <pre><code>$ cd ~/caminho/do/projeto</pre></code>
-
-<pre><code>$ make          # subir todas as máquinas virtuais</pre></code>
-
-<pre><code>$ make clean    # remover todas as máquinas virtuais</pre></code>
-
+	
+<pre><code>make</pre></code> ou <pre><code>make clean</pre></code> para removê-las.</p>
 
 <p>Observação: É importante lembrar que o comando <code>make</code> só funcionará se o arquivo Makefile estiver presente na pasta raiz do projeto.</p>
+
+<br>
 
 <h1>Tecnologias Utilizadas nas Máquinas Virtuais</h1>
 
