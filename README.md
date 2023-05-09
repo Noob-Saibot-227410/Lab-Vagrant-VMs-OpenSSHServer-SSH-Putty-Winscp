@@ -104,21 +104,22 @@ vagrant up</code>
 
 <h2>Debian</h2>
 <p>A máquina virtual debian é uma máquina Debian 10 que possui o Apache HTTP Server instalado. Para iniciar a máquina virtual, execute o seguinte comando na raiz do projeto:</p>
-<code>cd vms-ambiente-vagrant/debian
-vagrant up</code>
+<code>cd vms-ambiente-vagrant/debian</code>
+<code>vagrant up</code>
 
 <p>Após a criação da máquina virtual, é possível acessá-la por meio do comando:</p>
 <code>vagrant ssh</code>
 
 <h2>CentOS</h2>
 <p>A máquina virtual centos é uma máquina CentOS 8 que possui o MySQL Server instalado. Para iniciar a máquina virtual, execute o seguinte comando na raiz do projeto:</p>
-<code>cd vms-ambiente-vagrant/centos
-vagrant up</code>
+<code>cd vms-ambiente-vagrant/centos</code>
+<code>vagrant up</code>
 
 <p>Após a criação da máquina virtual, é possível acessá-la por meio do comando:</p>
-<pre><code>vagrant ssh</code></pre>
+<code>vagrant ssh</code>
 <p>Para remover todas as máquinas virtuais criadas, execute o seguinte comando na raiz do projeto:</p>
 <pre><code>make clean</code></pre>
 <p>Isso irá destruir todas as máquinas virtuais criadas e apagar todos os arquivos temporários gerados pelo Vagrant.</p>
+<br>
 <h3>Conclusão</h3>
 <p>Neste projeto, aprendemos como utilizar o Vagrant para criar e gerenciar máquinas virtuais de forma automatizada. Vimos como definir as configurações de cada máquina virtual por meio de arquivos Vagrantfile, como realizar a instalação e configuração de softwares por meio de arquivos de provisionamento, e como utilizar o Makefile para automatizar tarefas comuns do projeto. Esperamos que este projeto seja útil para você em seus estudos e projetos futuros.</p>
