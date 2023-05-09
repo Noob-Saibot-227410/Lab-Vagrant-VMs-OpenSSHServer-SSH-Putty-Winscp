@@ -1,0 +1,20 @@
+# Versão do Vagrantfile
+Vagrant.configure("2") do |config|
+  
+    # Definindo a imagem da box que será usada
+    config.vm.box = "ubuntu/focal64"
+    
+    # Configurando a rede privada da VM
+    config.vm.network "private_network", ip: "192.168.33.10"
+    
+    # Configurando os recursos da VM (memória e CPU)
+    config.vm.provider "virtualbox" do |vb|
+      vb.memory = "2048"
+      vb.cpus = "2"
+      vb.name = "maquina-servidor-ssh"
+    end
+    
+    # Provisionando a VM com um script shell
+    config.vm.provision "shell", path: "provision-ssh-server.sh"
+  end
+  
