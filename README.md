@@ -21,8 +21,6 @@ Windows
   <img src="https://img.shields.io/badge/OS-CentOS-informational?style=flat&logo=centos&logoColor=white&color=262577">
   <img src="https://img.shields.io/badge/Tecnologia-Vagrant-informational?style=flat&logo=vagrant&logoColor=white&color=1868F2">
   <img src="https://img.shields.io/badge/Tecnologia-VirtualBox-informational?style=flat&logo=virtualbox&logoColor=white&color=183A61">
-  <img src="https://img.shields.io/badge/Tecnologia-HTML5-informational?style=flat&logo=html5&logoColor=white&color=E34F26">
-  <img src="https://img.shields.io/badge/Tecnologia-CSS3-informational?style=flat&logo=css3&logoColor=white&color=1572B6">
   <img src="https://img.shields.io/badge/Tecnologia-Makefile-informational?style=flat&logo=gnu-make&logoColor=white&color=FFA900">
 </p>
 
