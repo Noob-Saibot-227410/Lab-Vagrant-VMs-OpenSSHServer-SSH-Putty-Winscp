@@ -6,14 +6,6 @@
   <a href="#licença">Licença</a>
 </p>
 <br>
-Tecnologias Utilizadas
-Vagrant
-VirtualBox
-Makefile
-Ubuntu
-Debian
-Windows
-<br>
 <p align="center">
   <img src="https://img.shields.io/badge/OS-Windows-informational?style=flat&logo=windows&logoColor=white&color=0078D6">
   <img src="https://img.shields.io/badge/OS-Ubuntu-informational?style=flat&logo=ubuntu&logoColor=white&color=E95420">
