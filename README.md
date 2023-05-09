@@ -44,8 +44,11 @@ Observação: O passo "Clique no botão 'Download' no topo da página" foi remov
 
 
 <h1>Instalação do VirtualBox</h1>
+
 <p>O VirtualBox é uma ferramenta open-source de virtualização, que permite a criação de máquinas virtuais em seu computador. Ele é amplamente utilizado em ambientes de desenvolvimento, testes e produção.</p>
+
 <p>Para instalar o VirtualBox em seu sistema operacional, siga os seguintes passos:</p>
+
 <ol>
 	<li>Acesse o site oficial do VirtualBox em <a href="https://www.virtualbox.org/wiki/Downloads">https://www.virtualbox.org/wiki/Downloads</a></li>
 	<li>Selecione o instalador adequado para o seu sistema operacional</li>
@@ -58,20 +61,27 @@ Observação: O passo "Clique no botão 'Download' no topo da página" foi remov
 
 
 <h1>Makefile</h1>
+
 <p>O Makefile é um arquivo utilizado para automatizar a construção de programas e tarefas repetitivas em um projeto. Ele permite que você defina regras para a construção do projeto, que serão executadas de forma automática quando você executar o comando make.</p>
-<p>Para executar o Makefile neste projeto, abra um terminal e navegue até a pasta raiz do projeto. Em seguida, execute o comando <code>make</code> para subir todas as máquinas virtuais, ou <code>make clean</code> para removê-las.</p>
+<p>Para executar o Makefile neste projeto, abra um terminal e navegue até a pasta raiz do projeto. Em seguida, execute o comando 
+	
+<pre><code>make #para subir todas as máquinas virtuais</pre></code> , ou <pre><code>make clean</pre></code> para removê-las.</p>
+
 <p>Exemplo:</p>
-<pre>
-$ cd ~/caminho/do/projeto
-$ make          # subir todas as máquinas virtuais
-$ make clean    # remover todas as máquinas virtuais
-</pre>
+
+<pre><code>$ cd ~/caminho/do/projeto</pre></code>
+
+<pre><code>$ make          # subir todas as máquinas virtuais</pre></code>
+
+<pre><code>$ make clean    # remover todas as máquinas virtuais</pre></code>
+
+
 <p>Observação: É importante lembrar que o comando <code>make</code> só funcionará se o arquivo Makefile estiver presente na pasta raiz do projeto.</p>
 
-
-
 <h1>Tecnologias Utilizadas nas Máquinas Virtuais</h1>
+
 <p>As máquinas virtuais criadas neste projeto utilizam os seguintes sistemas operacionais e tecnologias:</p>
+
 <ul>
   <li>maquina-ssh-server: Ubuntu 20.04, OpenSSH Server</li>
   <li>windows: Windows Server 2019, Putty, interface gráfica</li>
@@ -79,47 +89,61 @@ $ make clean    # remover todas as máquinas virtuais
   <li>debian: Debian 10, Apache HTTP Server</li>
   <li>centos: CentOS 8, MySQL Server</li>
 </ul>
+
 <p>Cada máquina virtual possui um arquivo Vagrantfile, que define as configurações da máquina virtual, como o sistema operacional, a quantidade de memória e CPU, e as configurações de rede. Além disso, cada máquina virtual possui um arquivo provision.sh, que define as configurações de provision. Ou seja, as tarefas que serão executadas após a criação da máquina virtual.</p>
+
 <h2>Maquina SSH Server</h2>
+
 <p>A máquina virtual maquina-ssh-server é uma máquina Ubuntu 20.04 que tem como objetivo ser um servidor SSH, permitindo conexões remotas por meio do protocolo SSH. Para iniciar a máquina virtual, execute o seguinte comando na raiz do projeto:</p>
-<code>cd vms-ambiente-vagrant/maquina-ssh-server
-vagrant up</code>
+
+<pre><code>cd vms-ambiente-vagrant/maquina-ssh-server</pre></code>
+
+<pre><code>vagrant up</pre></code>
 
 <p>Após a criação da máquina virtual, é possível acessá-la por meio do comando:</p>
-<code>vagrant ssh</code>
+
+<pre><code>vagrant ssh</pre></code>
 
 <h2>Windows</h2>
+
 <p>A máquina virtual windows é uma máquina Windows 10 que possui o PuTTY e o WinSCP instalados. Para iniciar a máquina virtual, execute o seguinte comando na raiz do projeto:</p>
-<code>cd vms-ambiente-vagrant/windows
-vagrant up</code>
+
+<pre><code>cd vms-ambiente-vagrant/windows</pre></code>
+
+<pre><code>vagrant up</pre></code>
 
 <p>Após a criação da máquina virtual, é possível acessá-la por meio de um cliente SSH, como o PuTTY, e por meio de um cliente SCP, como o WinSCP.</p>
+
 <h2>Ubuntu</h2>
+
 <p>A máquina virtual ubuntu é uma máquina Ubuntu 20.04 que possui o Docker instalado. Para iniciar a máquina virtual, execute o seguinte comando na raiz do projeto:</p>
-<code>cd vms-ambiente-vagrant/ubuntu
-vagrant up</code>
+
+<pre><code>cd vms-ambiente-vagrant/ubuntu</pre></code>
+<pre><code>vagrant up</pre></code>
 
 <p>Após a criação da máquina virtual, é possível acessá-la por meio do comando:</p>
-<code>vagrant ssh</code>
+<pre><code>vagrant ssh</pre></code>
 
 <h2>Debian</h2>
 <p>A máquina virtual debian é uma máquina Debian 10 que possui o Apache HTTP Server instalado. Para iniciar a máquina virtual, execute o seguinte comando na raiz do projeto:</p>
-<code>cd vms-ambiente-vagrant/debian</code>
-<code>vagrant up</code>
+<pre><code>cd vms-ambiente-vagrant/debian</pre></code>
+<pre><code>vagrant up</pre></code>
 
 <p>Após a criação da máquina virtual, é possível acessá-la por meio do comando:</p>
-<code>vagrant ssh</code>
+<pre><code>vagrant ssh</pre></code>
 
 <h2>CentOS</h2>
 <p>A máquina virtual centos é uma máquina CentOS 8 que possui o MySQL Server instalado. Para iniciar a máquina virtual, execute o seguinte comando na raiz do projeto:</p>
-<code>cd vms-ambiente-vagrant/centos</code>
-<code>vagrant up</code>
+<pre><code>cd vms-ambiente-vagrant/centos</pre></code>
+<pre><code>vagrant up</pre></code>
 
 <p>Após a criação da máquina virtual, é possível acessá-la por meio do comando:</p>
-<code>vagrant ssh</code>
+<pre><code>vagrant ssh</pre></code>
 <p>Para remover todas as máquinas virtuais criadas, execute o seguinte comando na raiz do projeto:</p>
 <pre><code>make clean</code></pre>
 <p>Isso irá destruir todas as máquinas virtuais criadas e apagar todos os arquivos temporários gerados pelo Vagrant.</p>
+
 <br>
+
 <h3>Conclusão</h3>
 <p>Neste projeto, aprendemos como utilizar o Vagrant para criar e gerenciar máquinas virtuais de forma automatizada. Vimos como definir as configurações de cada máquina virtual por meio de arquivos Vagrantfile, como realizar a instalação e configuração de softwares por meio de arquivos de provisionamento, e como utilizar o Makefile para automatizar tarefas comuns do projeto. Esperamos que este projeto seja útil para você em seus estudos e projetos futuros.</p>
