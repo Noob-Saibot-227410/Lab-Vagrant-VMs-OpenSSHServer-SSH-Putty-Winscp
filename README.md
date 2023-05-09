@@ -1,10 +1,4 @@
 <h1 align="center">Lab-Vagrant-VMs-OpenSSHServer-SSH-Putty-Winscp</h1>
-<p align="center">
-  <a href="#sobre">Sobre</a> •
-  <a href="#tecnologias-utilizadas">Tecnologias Utilizadas</a> •
-  <a href="#instalação-e-execução">Instalação e Execução</a> •
-  <a href="#licença">Licença</a>
-</p>
 <br>
 <p align="center">
   <img src="https://img.shields.io/badge/OS-Windows-informational?style=flat&logo=windows&logoColor=white&color=0078D6">
